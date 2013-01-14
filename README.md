@@ -14,7 +14,11 @@ In order to use GPIO without the need to be running as root:
         SUBSYSTEM=="gpio", ACTION=="add", PROGRAM="/bin/sh -c 'chown -R pi:pi /sys%p'"
 
 Usage:
+
 1. Export the pin to allow use;
+
 2. Configure pin direction;
+
 3. Use pin;
-4. Unexport after use.
+
+4. Unexport pin after use.
